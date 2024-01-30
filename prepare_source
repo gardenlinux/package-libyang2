@@ -1,0 +1,3 @@
+git_src --branch v2.1.148 https://github.com/CESNET/libyang.git
+cp -r "$dir/src/distro/pkg/deb" "$dir/src/debian"
+sed -i 's/{{ version }}/2.1.148/;s/{{ release }}/0/' "$dir/src/debian/changelog"
